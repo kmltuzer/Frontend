@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js" type="module"></script>
+
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <!-- CONFIRMATION AREA -->
+    <div class="overlay grid d-none">
+      <div class="timer flex">
+        <button class="cls-overlay-btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="conf-code">
+          <input type="text" placeholder="confirmation code" />
+          <i class="fa-solid"></i>
+          <p class="conf-code-info"></p>
+        </div>
+        <div class="circles">
+          <svg>
+            <circle cx="20" cy="20" r="20"></circle>
+            <circle cx="20" cy="20" r="20" id="stk-offset"></circle>
+          </svg>
+          <p class="count-info">60</p>
+          <template> </template>
+        </div>
+        <button class="conf-btn">Submit</button>
+      </div>
+    </div>
+
+    <header class="header flex bg-blue">
+      <!-- ITEMS ON NAVBAR -->
+      <nav class="flex">
+        <h1>
+          Logo
+          <div class="dot"></div>
+        </h1>
+        <ul class="links flex">
+          <li>Shoes</li>
+          <li>Laptops</li>
+          <li>Phones</li>
+          <li>Fragrances</li>
+          <li>Decoration</li>
+        </ul>
+        <div class="hm-menu-cont">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="hm-menu-links d-none">
+          <li class="log-reg">
+            <a href="" class="hm-log">Login</a>
+            <a href="" class="hm-reg">Signup</a>
+            <ul class="d-none hm-log-form slide">
+              <li>
+                <label for="hm-log-email">
+                  <input
+                    type="text"
+                    id="hm-log-email"
+                    placeholder="Email or Username"
+                  />
+                  <i class="hm-check fa-solid"></i>
+                  <p class="log-email-info info"></p>
+                </label>
+              </li>
+              <li>
+                <label for="hm-log-passw">
+                  <input
+                    type="password"
+                    id="hm-log-passw"
+                    placeholder="Password"
+                  />
+                  <i class="hm-check fa-solid"></i>
+                  <p class="log-passw-info info"></p>
+                </label>
+              </li>
+              <li>
+                <div class="log-footer">
+                  <button class="hm-log-submit-btn">Submit</button>
+                  <p class="result-info"></p>
+                </div>
+              </li>
+            </ul>
+            <ul class="hm-reg-form slide">
+              <li>
+                <label for="hm-firstname">
+                  <input
+                    type="text"
+                    id="hm-firstname"
+                    placeholder="Firstname"
+                  />
+                  <i class="fa-solid"></i>
+                  <p class="reg-fname-info info"></p>
+                </label>
+              </li>
+              <li>
+                <label for="hm-lastname">
+                  <input type="text" id="hm-lastname" placeholder="Lastname" />
+                  <i class="fa-solid"></i>
+                  <p class="reg-lname-info info"></p>
+                </label>
+              </li>
+              <li>
+                <label for="hm-email">
+                  <input type="email" id="hm-email" placeholder="Email" />
+                  <i class="fa-solid"></i>
+                  <p class="reg-email-info info"></p>
+                </label>
+              </li>
+              <li>
+                <label for="hm-password">
+                  <input
+                    type="password"
+                    id="hm-password"
+                    placeholder="Password"
+                  />
+                  <i class="fa-solid"></i>
+                  <p class="reg-passw-info info"></p>
+                </label>
+              </li>
+              <li>
+                <div class="reg-footer">
+                  <button class="hm-reg-submit-btn">Submit</button>
+                  <p class="result-info"></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li style="position: relative" class="pop-out">
+            <ul class="hm-ctgs flex">
+              <li><a href="">Laptops</a></li>
+              <li><a href="">Phones</a></li>
+              <li><a href="">Fragrances</a></li>
+              <li><a href="">Decoration</a></li>
+              <li><a href="" class="no-border">Groceries</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="usr-login flex">
+          <div class="usr-hover">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span>Login / Sign up</span>
+          <div class="choices d-none">
+            <div class="choice flex">
+              <button class="login-btn">LogIn</button>
+              <button class="signup-btn">SignUp</button>
+            </div>
+            <!-- // REGISTER FORM -->
+            <form action="#" class="register-form d-none">
+              <label for="firstname">
+                <input type="text" id="firstname" placeholder="Firstname" />
+                <i class="fa-solid"></i>
+                <p class="reg-fname-info info"></p>
+              </label>
+              <label for="lastname">
+                <input type="text" id="lastname" placeholder="Lastname" />
+                <i class="fa-solid"></i>
+                <p class="reg-lname-info info"></p>
+              </label>
+              <label for="email">
+                <input type="email" id="email" placeholder="Email" />
+                <i class="fa-solid"></i>
+                <p class="reg-email-info info"></p>
+              </label>
+              <label for="password">
+                <input type="password" id="password" placeholder="Password" />
+                <i class="fa-solid"></i>
+                <p class="reg-passw-info info"></p>
+              </label>
+              <div class="reg-footer">
+                <button class="reg-submit-btn">Submit</button>
+                <p class="result-info"></p>
+              </div>
+            </form>
+
+            <!-- // LOGIN FORM -->
+            <form action="#" class="login-form d-none">
+              <label for="log-email">
+                <input
+                  type="text"
+                  id="log-email"
+                  placeholder="Email or Username"
+                />
+                <i class="fa-solid"></i>
+                <p class="log-email-info info"></p>
+              </label>
+              <label for="log-passw">
+                <input type="password" id="log-passw" placeholder="Password" />
+                <i class="fa-solid"></i>
+                <p class="log-passw-info info"></p>
+              </label>
+              <div class="log-footer">
+                <button class="log-submit-btn">Submit</button>
+                <p class="result-info"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- BASKET AREA -->
+        <div class="basket flex">
+          <div class="basket-logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <span class="prds-numb d-none" id="prds-numb">0</span>
+          <div class="basket-hover d-none drv-away">
+            <div class="prd-basket">
+              <span class="prd-basket-id d-none"></span>
+              <h3 class="prd-basket-title"></h3>
+              <p class="prd-basket-info"></p>
+              <p class="prd-basket-price"></p>
+              <div class="basket-amount-area d-none">
+                <input type="text" readonly value="1" />
+                <div class="amount-buttons flex">
+                  <button class="amount-up">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <button class="amount-down">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="basket-sum">0</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="search flex">
+      <div class="filter d-none"></div>
+      <div class="input flex">
+        <input type="text" placeholder="Search a product" id="search-box" />
+        <button class="search-btn flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </section>
+    <main class="products flex">
+      <section class="sl-container">
+        <div class="sl-buttons flex">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="slider fade active">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/looking-bags.jpg)"
+            img-index="0"
+          ></div>
+        </div>
+        <div class="slider fade d-none">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/dsc-clothes-2.jpg)"
+            img-index="1"
+          ></div>
+        </div>
+        <div class="slider fade d-none">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/dsc-clothes-1.jpg)"
+            img-index="2"
+          ></div>
+        </div>
+        <div class="slider fade d-none">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/sale-showcase.jpg)"
+            img-index="3"
+          ></div>
+        </div>
+        <div class="slider fade d-none">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/save-your-info.jpg)"
+            img-index="4"
+          ></div>
+        </div>
+        <div class="slider fade d-none">
+          <div
+            class="sl-img"
+            style="background-image: url(./images/shoes.jpg)"
+            img-index="5"
+          ></div>
+        </div>
+        <div class="sl-dots flex">
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot active-dot" sl-id="0"></span>
+          </div>
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot" sl-id="1"></span>
+          </div>
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot" sl-id="2"></span>
+          </div>
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot" sl-id="3"></span>
+          </div>
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot" sl-id="4"></span>
+          </div>
+          <div class="sl-dot-wrap flex">
+            <span class="sl-dot" sl-id="5"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="ctg-smartphones category flex">
+      <h1 class="ctg-title">Phones</h1>
+      <div class="prd-wrapper grid" id="smartphones">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+        <div class="prd-card d-none clone">
+          <span class="prd-id d-none"></span>
+          <h3 class="prd-title"></h3>
+          <div class="prd-img">
+            <img src="" alt="" />
+          </div>
+          <p class="prd-info"></p>
+          <p class="prd-price"></p>
+          <ul class="prd-rate flex">
+            <li class="star">
+              <i class="fa-regular fa-star"></i>
+            </li>
+            <li class="star">
+              <i class="fa-regular fa-star"></i>
+            </li>
+            <li class="star">
+              <i class="fa-regular fa-star"></i>
+            </li>
+            <li class="star">
+              <i class="fa-regular fa-star"></i>
+            </li>
+            <li class="star">
+              <i class="fa-regular fa-star"></i>
+            </li>
+          </ul>
+          <button class="add-bskt">Add to basket</button>
+        </div>
+      </div>
+    </section>
+    <section class="ctg-laptops category flex">
+      <h1 class="ctg-title">Laptops</h1>
+      <div class="prd-wrapper grid" id="laptops">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+      </div>
+    </section>
+    <section class="ctg-home-decoration category flex">
+      <h1 class="ctg-title">Decoration</h1>
+      <div class="prd-wrapper grid" id="home-decoration">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+      </div>
+    </section>
+    <section class="ctg-fragrances category flex">
+      <h1 class="ctg-title">Fragrances</h1>
+      <div class="prd-wrapper grid" id="fragrances">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+      </div>
+    </section>
+    <section class="ctg-groceries category flex">
+      <h1 class="ctg-title">Groceries</h1>
+      <div class="prd-wrapper grid" id="groceries">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+      </div>
+    </section>
+    <section class="ctg-skincare category flex">
+      <h1 class="ctg-title">Skincare</h1>
+      <div class="prd-wrapper grid" id="skincare">
+        <div class="prd-angles">
+          <i class="fa-solid fa-angle-left prev-prd"></i>
+          <i class="fa-solid fa-angle-right next-prd"></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
