@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dashboard of Investment</title>
+  </head>
+  <body>
+    <nav class="flex ai-cent bg-white pos-rel">
+      <figure class="logo flex">
+        <img src="./images/logo.png" alt="" />
+      </figure>
+      <div for="search" class="search pos-rel">
+        <input type="text" class="hide" placeholder="Search" />
+        <span class="material-symbols-sharp pos-abs"> search </span>
+      </div>
+      <div class="nav__right flex ai-cent">
+        <div class="mode flex">
+          <span class="material-symbols-sharp active-mode"> sunny </span>
+          <span class="material-symbols-sharp"> dark_mode </span>
+        </div>
+        <div class="user flex ai-cent">
+          <figure class="user__img flex ai-cent">
+            <img src="./images/profile-1.jpg" alt="" />
+          </figure>
+          <small class="fw-500">Chu Zoe</small>
+          <span class="material-symbols-sharp"> expand_more </span>
+        </div>
+      </div>
+      <span class="material-symbols-sharp menu__btn pos-abs"> menu </span>
+    </nav>
+    <!-- ============================================= NAV END ============================================= -->
+    <div class="container flex">
+      <aside class="sidebar grid d-none">
+        <header class="flex-col pos-rel">
+          <span class="material-symbols-sharp pos-abs close__btn"> close </span>
+          <a href="" class="dashboard flex jc-str ai-cent sidebar__active">
+            <span class="material-symbols-sharp"> dashboard </span>
+            <h5>Dashboard</h5>
+          </a>
+
+          <a href="" class="exchange flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> currency_exchange </span>
+            <h5>Exchange</h5>
+          </a>
+          <a href="" class="account flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> account_balance_wallet </span>
+            <h5>Account</h5>
+          </a>
+          <a href="" class="transactions flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> credit_card </span>
+            <h5>Transactions</h5>
+          </a>
+          <a href="" class="analytics flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> pie_chart </span>
+            <h5>Analytics</h5>
+          </a>
+          <a href="" class="messages flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> chat </span>
+            <h5>Messages</h5>
+          </a>
+          <a href="" class="help flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> help_center </span>
+            <h5>Support</h5>
+          </a>
+          <a href="" class="settings flex jc-str ai-cent">
+            <span class="material-symbols-sharp"> settings </span>
+            <h5>Settings</h5>
+          </a>
+        </header>
+        <footer class="grid">
+          <div class="update-info flex-col">
+            <div class="update__top flex-col">
+              <span class="material-symbols-sharp"> update </span>
+              <h4>Updates Available</h4>
+            </div>
+            <div class="update__md">
+              <small>Security updates</small>
+              <small>General updates</small>
+            </div>
+            <button class="update__btn">Update Now</button>
+          </div>
+        </footer>
+      </aside>
+      <!-- ============================================= SIDEBAR END ============================================= -->
+      <main class="flex-col">
+        <section class="overview flex-col">
+          <header class="overview__top flex">
+            <h2>Overview</h2>
+            <input type="date" class="bg-white" />
+          </header>
+          <div class="cards flex">
+            <div class="card flex-col">
+              <header class="flex">
+                <div class="left flex">
+                  <figure>
+                    <img src="./images/BTC.png" alt="" />
+                  </figure>
+                  <span>BTC</span>
+                </div>
+                <figure>
+                  <img src="./images/visa.png" alt="" />
+                </figure>
+              </header>
+              <div class="card__md flex">
+                <h3>$825,11</h3>
+                <figure>
+                  <img src="./images/card chip.png" alt="" />
+                </figure>
+              </div>
+              <footer class="flex">
+                <div class="left">
+                  <small>Card Holder</small>
+                  <h6>ERNEST ACHIEVER</h6>
+                </div>
+                <div class="right flex">
+                  <div class="expiry">
+                    <small>Expiry</small>
+                    <h6>08/25</h6>
+                  </div>
+                  <div class="cvv">
+                    <small>CVV</small>
+                    <h6>924</h6>
+                  </div>
+                </div>
+              </footer>
+            </div>
+
+            <div class="card flex-col">
+              <header class="flex">
+                <div class="left flex">
+                  <figure>
+                    <img src="./images/ETH.png" alt="" />
+                  </figure>
+                  <span>ETH</span>
+                </div>
+                <figure>
+                  <img src="./images/master card.png" alt="" />
+                </figure>
+              </header>
+              <div class="card__md flex">
+                <h3>$825,11</h3>
+                <figure>
+                  <img src="./images/card chip.png" alt="" />
+                </figure>
+              </div>
+              <footer class="flex">
+                <div class="left">
+                  <small>Card Holder</small>
+                  <h6>JANET JACKSON</h6>
+                </div>
+                <div class="right flex">
+                  <div class="expiry">
+                    <small>Expiry</small>
+                    <h6>05/27</h6>
+                  </div>
+                  <div class="cvv">
+                    <small>CVV</small>
+                    <h6>536</h6>
+                  </div>
+                </div>
+              </footer>
+            </div>
+
+            <div class="card flex-col">
+              <header class="flex">
+                <div class="left flex">
+                  <figure>
+                    <img src="./images/EURO.png" alt="" />
+                  </figure>
+                  <span>EUR</span>
+                </div>
+                <figure>
+                  <img src="./images/visa.png" alt="" />
+                </figure>
+              </header>
+              <div class="card__md flex">
+                <h3>$825,11</h3>
+                <figure>
+                  <img src="./images/card chip.png" alt="" />
+                </figure>
+              </div>
+              <footer class="flex">
+                <div class="left">
+                  <small>Card Holder</small>
+                  <h6>PETER SMITH</h6>
+                </div>
+                <div class="right flex">
+                  <div class="expiry">
+                    <small>Expiry</small>
+                    <h6>03/26</h6>
+                  </div>
+                  <div class="cvv">
+                    <small>CVV</small>
+                    <h6>379</h6>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <footer class="flex">
+            <div class="income">
+              <h4>Income</h4>
+              <details>
+                <summary>Details</summary>
+                <h4>$118,27</h4>
+                <small>+17,69%</small>
+              </details>
+              <small class="tx-muted">Compared to $114,234 last month</small>
+            </div>
+
+            <div class="expense">
+              <h4>Expense</h4>
+              <details>
+                <summary>Details</summary>
+                <h4>$118,27</h4>
+                <small>-5,9%</small>
+              </details>
+              <small class="tx-muted">Compared to $114,234 last month</small>
+            </div>
+
+            <div class="cashback">
+              <h4>Cashback</h4>
+              <details>
+                <summary>Details</summary>
+                <h4>$118,27</h4>
+                <small>+21,13%</small>
+              </details>
+              <small class="tx-muted">Compared to $114,234 last month</small>
+            </div>
+
+            <div class="income">
+              <h4>Income</h4>
+              <details>
+                <summary>Details</summary>
+                <h4>$118,27</h4>
+                <small>+14,71%</small>
+              </details>
+              <small class="tx-muted">Compared to $114,234 last month</small>
+            </div>
+          </footer>
+        </section>
+
+        <section class="fast-pay flex ai-cent">
+          <h3>Fast Payment</h3>
+          <span class="material-symbols-sharp plus"> add </span>
+          <div class="fast-payment flex">
+            <div class="item training flex">
+              <div class="dot"></div>
+              <p>Training</p>
+              <h5>$50</h5>
+            </div>
+
+            <div class="item internet flex">
+              <div class="dot"></div>
+              <p>Internet</p>
+              <h5>$75</h5>
+            </div>
+
+            <div class="item gas flex">
+              <div class="dot"></div>
+              <p>Gas</p>
+              <h5>$90</h5>
+            </div>
+
+            <div class="item movies flex">
+              <div class="dot"></div>
+              <p>Movies</p>
+              <h5>$25</h5>
+            </div>
+
+            <div class="item education flex">
+              <div class="dot"></div>
+              <p>Education</p>
+              <h5>$40</h5>
+            </div>
+
+            <div class="item electricity flex">
+              <div class="dot"></div>
+              <p>Electricity</p>
+              <h5>$70</h5>
+            </div>
+
+            <div class="item food flex">
+              <div class="dot"></div>
+              <p>Food</p>
+              <h5>$20</h5>
+            </div>
+          </div>
+        </section>
+
+        <canvas id="chart"></canvas>
+      </main>
+      <!-- ============================================= RIGHT SIDE ============================================= -->
+
+      <aside class="right__aside grid">
+        <section class="investment flex-col">
+          <header class="flex">
+            <h4>Investments</h4>
+            <div class="right flex">
+              <a href="">
+                <small>More</small>
+                <span class="material-symbols-sharp"> chevron_right </span>
+              </a>
+            </div>
+          </header>
+          <div class="company uniliver grid">
+            <figure class="img flex">
+              <img src="./images/uniliver.png" alt="" />
+            </figure>
+            <h5>Uniliver</h5>
+            <div class="time">
+              <time datetime="7 Nov, 2021">7 Nov, 2021</time>
+              <time datetime="2.14PM" class="tx-muted">2.14PM</time>
+            </div>
+            <div class="bonds">
+              <small>1402</small>
+              <small class="tx-muted">Bonds</small>
+            </div>
+            <div class="amount">
+              <h5>$20,033</h5>
+              <small>-4.27%</small>
+            </div>
+          </div>
+
+          <div class="company monster grid">
+            <figure class="img flex">
+              <img src="./images/monster.png" alt="" />
+            </figure>
+            <h5>Monster</h5>
+            <div class="time">
+              <time datetime="7 Nov, 2021">7 Nov, 2021</time>
+              <time datetime="2.14PM" class="tx-muted">2.14PM</time>
+            </div>
+            <div class="bonds">
+              <small>1402</small>
+              <small class="tx-muted">Bonds</small>
+            </div>
+            <div class="amount">
+              <h5>$20,033</h5>
+              <small>-4.27%</small>
+            </div>
+          </div>
+
+          <div class="company mcdon grid">
+            <figure class="img flex">
+              <img src="./images/mcdonalds.png" alt="" />
+            </figure>
+            <h5>McDonalds</h5>
+            <div class="time">
+              <time datetime="7 Nov, 2021">7 Nov, 2021</time>
+              <time datetime="2.14PM" class="tx-muted">2.14PM</time>
+            </div>
+            <div class="bonds">
+              <small>1402</small>
+              <small class="tx-muted">Bonds</small>
+            </div>
+            <div class="amount">
+              <h5>$20,033</h5>
+              <small>-4.27%</small>
+            </div>
+          </div>
+
+          <div class="company tesla grid">
+            <figure class="img flex">
+              <img src="./images/tesla.png" alt="" />
+            </figure>
+            <h5>Tesla</h5>
+            <div class="time">
+              <time datetime="7 Nov, 2021">7 Nov, 2021</time>
+              <time datetime="2.14PM" class="tx-muted">2.14PM</time>
+            </div>
+            <div class="bonds">
+              <small>1402</small>
+              <small class="tx-muted">Bonds</small>
+            </div>
+            <div class="amount">
+              <h5>$20,033</h5>
+              <small>-4.27%</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="transactions flex-col">
+          <header class="flex ai-cent">
+            <h4>Recent Transactions</h4>
+            <div class="right flex">
+              <a href="">
+                <small>More</small>
+                <span class="material-symbols-sharp"> chevron_right </span>
+              </a>
+            </div>
+          </header>
+          <div class="transaction grid">
+            <figure class="ctg-logo music flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> headphones </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Music</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-visa flex ai-cent">
+                <img src="./images/visa.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+
+          <div class="transaction grid">
+            <figure class="ctg-logo shopping flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> shopping_bag </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Shopping</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-master-c flex ai-cent">
+                <img src="./images/master card.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+
+          <div class="transaction grid">
+            <figure class="ctg-logo restaurant flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> restaurant </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Restaurant</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-master-c flex ai-cent">
+                <img src="./images/master card.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+
+          <div class="transaction grid">
+            <figure class="ctg-logo games flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> stadia_controller </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Games</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-visa flex ai-cent">
+                <img src="./images/visa.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+
+          <div class="transaction grid">
+            <figure class="ctg-logo pharmacy flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> medication </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Pharmacy</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-master-c flex ai-cent">
+                <img src="./images/master card.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+
+          <div class="transaction grid">
+            <figure class="ctg-logo education flex ai-cent jc-cent">
+              <span class="material-symbols-sharp"> school </span>
+            </figure>
+            <div class="ctg-text flex-col jc-cent ai-str">
+              <h5>Education</h5>
+              <time datetime="21-11-2021" class="tx-muted">21.11.2021</time>
+            </div>
+            <div class="c-card flex">
+              <figure class="car-img img-visa flex ai-cent">
+                <img src="./images/visa.png" alt="" />
+              </figure>
+              <div class="flex-col ai-str">
+                <p>*2757</p>
+                <small class="tx-muted">Credit Card</small>
+              </div>
+            </div>
+            <h5>-$20</h5>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
