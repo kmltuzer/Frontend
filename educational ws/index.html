@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- SWIPERJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- MYCSS & SCRIPT -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>AN EDUCATIONAL WS</title>
+  </head>
+  <body>
+    <nav class="flex">
+      <h3 class="nav__logo">LOGO</h3>
+      <ul class="nav__links flex">
+        <li class="nav__link link"><a href="index.html">Home</a></li>
+        <li class="nav__link link"><a href="about.html">About</a></li>
+        <li class="nav__link link"><a href="courses.html">Course</a></li>
+        <li class="nav__link link"><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__hidden__menu">
+        <button class="nav__hidden__btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav__links__hidden flex-col d-none">
+          <li class="nav__link__hidden link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav__link__hidden link">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav__link__hidden link">
+            <a href="courses.html">Course</a>
+          </li>
+          <li class="nav__link__hidden link">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="index__header grid">
+      <div class="header__left flex-col">
+        <h1 class="header__left__title">
+          Grow your skills to advance your career path
+        </h1>
+        <p class="header__left__desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod fuga
+          natus assumenda, labore nemo obcaecati autem ratione doloribus eaque
+          distinctio magnam totam, maiores veritatis, architecto alias possimus
+          voluptatem tempore. Reiciendis!
+        </p>
+        <button class="header__left__btn btn-lg bg-danger">
+          <a href="">Get Started</a>
+        </button>
+      </div>
+      <div class="header__right flex">
+        <div class="header__right__img">
+          <img src="./images/header.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="ctgs grid">
+      <div class="ctgs__left flex-col">
+        <h1 class="ctgs__left__title">Categories</h1>
+        <p class="ctgs__left__desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+          doloribus unde excepturi, saepe velit hic perferendis itaque magni,
+          veritatis voluptatem quaerat. At error soluta vitae ipsa cum magnam
+          illum iure!
+        </p>
+        <button class="ctgs__left__btn btn-lg bg-white">
+          <a href="">Learn More</a>
+        </button>
+      </div>
+      <div class="ctgs__right grid">
+        <div class="ctgs__right__cards grid">
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo blockchain">
+              <i class="fa-solid fa-bitcoin-sign"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo design">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo dollar">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo bullhorn">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo music">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+
+          <article class="ctgs__right__card card grid">
+            <div class="card__logo business">
+              <i class="fa-solid fa-business-time"></i>
+            </div>
+            <h4 class="card__title">Blockchain</h4>
+            <p class="card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur dolor molestias magnam, odit quos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="courses flex-col">
+      <h1 class="courses__title">Our Popular Courses</h1>
+      <div class="courses__container grid">
+        <div class="courses__course grid">
+          <div class="course__img">
+            <img src="./images/course1.jpg" alt="" />
+          </div>
+          <h3 class="course__title">Responsive Social Media UI Design</h3>
+          <p class="course__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            exercitationem, provident maxime veniam error corrupti!
+          </p>
+          <button class="course__btn bg-danger btn-lg">
+            <a href="">Learn More</a>
+          </button>
+        </div>
+        <div class="courses__course grid">
+          <div class="course__img">
+            <img src="./images/course2.jpg" alt="" />
+          </div>
+          <h3 class="course__title">Responsive Smartphone Web Design</h3>
+          <p class="course__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            exercitationem, provident maxime veniam error corrupti!
+          </p>
+          <button class="course__btn bg-danger btn-lg">
+            <a href="">Learn More</a>
+          </button>
+        </div>
+        <div class="courses__course grid">
+          <div class="course__img">
+            <img src="./images/course3.jpg" alt="" />
+          </div>
+          <h3 class="course__title">Admin Dashboard UI Design</h3>
+          <p class="course__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            exercitationem, provident maxime veniam error corrupti!
+          </p>
+          <button class="course__btn bg-danger btn-lg">
+            <a href="">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faqs grid">
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+
+      <div class="faq flex-col">
+        <div class="faq__header">
+          <i class="fa-solid fa-plus"></i>
+          <h4 class="faq__question">How do I know the right courses for me?</h4>
+        </div>
+        <p class="faq__answer d-none">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          earum necessitatibus dignissimos, minus optio quis quidem similique
+          vel illum autem voluptates blanditiis. Autem ipsa praesentium officiis
+          iure quod, in dolore.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials flex-col">
+      <h1 class="testimonials__title">Student's Testimonials</h1>
+      <div class="swiper flex">
+        <div class="testimonial__wrapper swiper-wrapper flex">
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar1.jpg" alt="" />
+              </div>
+              <h4 class="name">Diana Ayi</h4>
+              <small class="job">Student</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar2.jpg" alt="" />
+              </div>
+              <h4 class="name">Ernest Achiever</h4>
+              <small class="job">Web Developer</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar3.jpg" alt="" />
+              </div>
+              <h4 class="name">Edem Quist</h4>
+              <small class="job">Student</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar4.jpg" alt="" />
+              </div>
+              <h4 class="name">Hajia Bintu</h4>
+              <small class="job">Online Seller</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar5.jpg" alt="" />
+              </div>
+              <h4 class="name">Jane Doe</h4>
+              <small class="job">Student</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar6.jpg" alt="" />
+              </div>
+              <h4 class="name">Jeniffer Wilson</h4>
+              <small class="job">Photopgrapher</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+
+          <div class="testimonial flex-col swiper-slide">
+            <div class="testimonial__header flex-col">
+              <div class="testimonial__avatar">
+                <img src="./images/avatar7.jpg" alt="" />
+              </div>
+              <h4 class="name">Aruna Bilovic</h4>
+              <small class="job">Student</small>
+            </div>
+            <p class="testimonial__comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos
+              consectetur quidem doloribus cumque alias eligendi et molestiae at
+              amet. Placeat dolorum provident libero! Magnam voluptatem
+              laudantium animi quidem distinctio.
+            </p>
+          </div>
+        </div>
+        <div
+          class="swiper-pagination"
+          style="position: static; margin-top: 50px; align-self: center"
+        ></div>
+      </div>
+    </section>
+
+    <footer class="grid">
+      <div class="footer__left">
+        <h3 class="footer__title">LOGO</h3>
+        <p class="footer__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          reiciendis modi, incidunt delectus odit nam suscipit aperiam ullam,
+          cum consequuntur laudantium fugiat.
+        </p>
+      </div>
+      <div class="footer__md__left">
+        <h3 class="footer__title">Permalinks</h3>
+        <ul class="footer__links">
+          <li class="footer__link link">
+            <a href="">Home</a>
+          </li>
+          <li class="footer__link link">
+            <a href="">About</a>
+          </li>
+          <li class="footer__link link">
+            <a href="">Course</a>
+          </li>
+          <li class="footer__link link">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__md__right">
+        <h3 class="footer__primacy__title">Primacy</h3>
+        <ul class="footer__primacy__links">
+          <li class="footer__primacy__link link">
+            <a href="">Primacy policy</a>
+          </li>
+          <li class="footer__primacy__link link">
+            <a href=""> Terms and conditions </a>
+          </li>
+          <li class="footer__primacy__link link">
+            <a href="">Refund policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__right">
+        <h3 class="footer__right__title">Contact Us</h3>
+        <p class="footer__phone">+55 555 555 5555</p>
+        <p class="footer__mail">example@example.com</p>
+        <ul class="footer__socials flex">
+          <li class="link">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="link">
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="link">
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="link">
+            <a href="">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <section class="copyright">
+      <small> Copyright &copy; LOGO Company </small>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          800: {
+            slidesPerView: "auto",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

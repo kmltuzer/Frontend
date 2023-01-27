@@ -1,0 +1,139 @@
+.container{
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+
+}
+.contact{
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+
+    background-color: var(--bg1);
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    position: relative;
+}
+.contact__left{
+    background-color: var(--clr-primary);
+
+    padding: 2rem 4rem;
+
+    gap: 2rem;
+
+    border-radius: 1rem;
+
+    position: absolute;
+    left: 5%;
+    top: -10%;
+
+    max-width: 40%;
+
+}
+.contact__left__img{
+    justify-self: start;
+    width: 50%;
+}
+.contact__addresses{
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    gap: 1rem;
+}
+.contact__addresses li{
+    grid-template-columns: 1fr 7fr;
+}
+.contact__inputs{
+    width: 100%;
+
+    grid-column: 2;
+    gap: 1rem;
+}
+.contact__inputs input,
+.contact__inputs textarea {
+    display: block;
+    width: 100%;
+
+    background-color: var(--bg);
+
+    outline: none;
+    border: none;
+
+    padding: 1rem;
+    margin-top: 0.5rem;
+
+    color: var(--clr-white);
+}
+.contact__submit__btn{
+    margin-top: 0.5rem;
+
+    font-weight: normal;
+}
+.contact__form__names{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+footer{
+    border-top: 1px solid var(--bg1);
+    padding-top: 2rem;
+}
+@media screen and (max-width : 920px) {
+    .container{
+        padding: 0 0.5rem;
+        margin-bottom: 8rem;
+    
+    }
+    .contact__left{
+        background-color: var(--clr-primary);
+    
+        padding: 2rem 3rem;
+    }    
+    .contact__inputs{
+        gap: 0;
+    }    
+}
+@media screen and (max-width : 830px) {
+    .container{
+        margin-bottom: 3rem;
+    
+    }    
+    .contact{
+        grid-template-columns: 1fr;  
+        gap: 1rem;     
+    }
+    .contact__inputs{
+        width: 100%;
+    
+        grid-column: 1;
+    }    
+    .contact__left{
+        position: static;
+
+        max-width: 100%;
+        gap: 0.5rem;
+    
+    }
+    .contact__left__title{
+        font-size: 1.5rem;
+    }
+    .contact__addresses{
+        margin-top: 1rem;
+    }
+    .contact__submit__btn{
+        justify-self: center;
+    }
+}
+@media screen and (max-width : 830px) {
+    .container{
+        padding: 0;
+        margin-bottom: 1rem;
+    
+    }    
+}
+@media screen and (max-width : 550px) {
+    aside.contact{
+        padding: 0.75rem;
+    }
+}
