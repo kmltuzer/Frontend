@@ -1,3 +1,3 @@
-### [Photography Portfolio Website](https://youtu.be/qKBLkcMj75M)
+### [Photography Portfolio Website]
 
 ![](./thumbnail.jpg)
