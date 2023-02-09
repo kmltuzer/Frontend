@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>FOTOGRAFI</title>
+
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="purple">
+    <!-------------------------------- NAV --------------------->
+    <nav class="nav" id="nav">
+      <div class="container nav__container flex">
+        <a href="index.html" class="logo">
+          <span>FOTO</span>
+          <span>GRAFI</span>
+        </a>
+        <ul class="flex nav__links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#exhibition">Exhibition</a></li>
+        </ul>
+        <ul class="flex nav__socials">
+          <li>
+            <a href="">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="menu__toggle">
+          <div class="times" style="display: none">
+            <div class="stick"></div>
+            <div class="stick"></div>
+          </div>
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------- HERO --------------------->
+    <section class="hero" id="hero">
+      <div class="hero__container container grid">
+        <figure class="hero__left">
+          <div class="img-md" style="--w: 90%; --h: 50%"></div>
+          <div class="border border-1"></div>
+          <div class="border border-2"></div>
+          <div class="img-lg">
+            <img src="images/header.jpg" alt="" />
+          </div>
+        </figure>
+        <div class="hero__right">
+          <header class="flex">
+            <div class="indent"></div>
+            <a href="">#Best Travel Photographer 2022</a>
+          </header>
+          <h1>See The Beauty Of The World Through My Lens</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            tempore necessitatibus, aliquam nulla saepe consequuntur, deserunt
+            eligendi quam ut rerum asperiores obcaecati odit! Labore quibusdam
+            amet sed debitis perferendis ut.
+          </p>
+          <a href="" class="d-none">Let's Talk</a>
+          <footer class="hero__frames flex">
+            <figure style="--rot: -15deg; --trans: 0">
+              <img src="./images/frame1.jpg" alt="" />
+            </figure>
+            <figure style="--rot: 20deg; --trans: -90%">
+              <img src="./images/frame2.jpg" alt="" />
+            </figure>
+          </footer>
+          <a href="" class="btn flex">
+            <p class="circle-text">CONTACT NOW CONTACT NOW</p>
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------- ABOUT --------------------->
+    <section class="about" id="about">
+      <div class="about__container container grid">
+        <h1>
+          About <br />
+          Lorem Ipsum
+        </h1>
+
+        <div class="about__left">
+          <figure class="">
+            <div class="img-md" style="--w: 90%; --h: 50%"></div>
+            <div class="border"></div>
+            <div class="img-lg">
+              <img src="images/about.jpg" alt="" />
+            </div>
+          </figure>
+        </div>
+        <article class="about__right">
+          <div class="indent"></div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos
+            quod voluptatum veritatis quo quae laudantium nemo error sed
+            necessitatibus sapiente ea cum doloribus ducimus, deserunt non iste,
+            animi, reprehenderit ratione consequatur.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            aliquam iusto eius ab nihil hic tempora quos, dolorem laudantium?
+            Laboriosam nostrum incidunt voluptatibus provident.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            repellendus sit minus, obcaecati eligendi harum exercitationem
+            maxime vel quidem architecto odio dolorem rem eveniet beatae nemo
+            soluta nobis esse ex?
+          </p>
+        </article>
+        <a href="" class="btn flex">
+          <p class="circle-text">CONTACT NOW CONTACT NOW</p>
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+    </section>
+    <!-------------------------------- GALLERY --------------------->
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container flex-col">
+        <header class="grid">
+          <h1>My Gallery</h1>
+          <div class="indent"></div>
+        </header>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eos
+          minima, eligendi laboriosam ducimus cumque aspernatur exercitationem
+          rem fugit voluptas asperiores soluta dolor ipsum, atque temporibus
+          rerum dolores id deserunt.
+        </p>
+        <main class="mySwiper" style="overflow-x: hidden; position: relative">
+          <div class="swiper-wrapper flex">
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery1.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <div class="gallery__img-md">
+                <img src="images/gallery2.jpg" alt="" />
+              </div>
+              <img src="images/gallery2.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery3.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery4.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <div class="gallery__img-md">
+                <img src="images/gallery5.jpg" alt="" />
+              </div>
+              <img src="images/gallery5.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery6.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery7.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <div class="gallery__img-md">
+                <img src="images/gallery8.jpg" alt="" />
+              </div>
+              <img src="images/gallery8.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery9.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery10.jpg" alt="" />
+            </div>
+            <div class="gallery__img swiper-slide">
+              <img src="images/gallery11.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="swiper-pagination"
+            style="position: static; margin: 1.5rem 0"
+          ></div>
+        </main>
+      </div>
+    </section>
+    <!-------------------------------- EXHIBITION --------------------->
+    <section class="exhibition" id="exhibition">
+      <div class="container exhibition__container flex-col">
+        <header class="grid">
+          <h1>EXHIBITION</h1>
+          <div class="indent"></div>
+        </header>
+        <article class="grid">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eos
+            minima, eligendi laboriosam ducimus cumque aspernatur exercitationem
+            rem fugit voluptas asperiores soluta dolor ipsum, atque temporibus
+            rerum dolores id deserunt.
+          </p>
+          <a href="" class="btn flex">
+            <p class="circle-text">CONTACT NOW CONTACT NOW</p>
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+        </article>
+        <figure class="grid">
+          <div class="img">
+            <img src="images/ev.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/e1.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/e2.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/e3.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/e4.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/e5.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/eh.jpg" alt="" />
+          </div>
+        </figure>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container flex-col">
+        <address>
+          <a href="mailto:support@example.com">support@example.com</a>
+          <a href="mailto:support@example.com">
+            <i class="bx bx-up-arrow-alt"></i>
+          </a>
+        </address>
+        <ul class="footer__links flex">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#exhibition"> Exhibition </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- MY JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
