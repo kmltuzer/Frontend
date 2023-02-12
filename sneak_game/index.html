@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+
+    <title>SNEAK GAME</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Score : <span class="curr-score">0</span></h3>
+        <h3>Best Score : <span class="best-score">0</span></h3>
+      </header>
+      <main class="board"></main>
+    </div>
+
+    <div class="ongameover d-none">
+      <div class="content">
+        <h1 class="text">Game Over</h1>
+        <div class="buttons">
+          <button class="p-again">Play Again</button>
+          <button class="setting">Set Difficulty</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="difficulty d-none">
+      <div class="levels">
+        <button data-level="1500">Beginner</button>
+        <button data-level="300">Medium</button>
+        <button data-level="150">Hard</button>
+        <button data-level="100">Pro</button>
+        <button data-level="50">Expert</button>
+      </div>
+    </div>
+
+    <div class="paused d-none">
+      <h1 class="text">PAUSED</h1>
+    </div>
+  </body>
+</html>

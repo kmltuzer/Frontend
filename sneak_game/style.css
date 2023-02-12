@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body{
+    min-height: 100vh;
+}
+body{
+    display: grid;
+    place-items: center;
+
+    background : linear-gradient( #778da9, #e0e1dd);
+
+    font-family: 'Montserrat', sans-serif;
+}
+.d-none{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 95%;
+
+    overflow: hidden;
+}
+.container header {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+
+    padding: 1.5rem;
+
+    color: #e0e1dd;
+
+    background-color: #1b263b;
+
+    border-radius: 5px 5px 0 0;
+
+}
+.container main {
+    position: relative;
+
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+
+    background-color: #0d1b2a;
+
+    height: 100%;
+
+    border-radius: 0 0 5px 5px;
+}
+.food{ background-color: #ff003d; }
+.snake,
+.snk-body{ background-color: #e0e1dd; }
+/* ============================================ WHEN GAME OVER ============================================ */
+.container .game-over{
+    grid-template: 1fr / 1fr; 
+    align-items: center; 
+    justify-content: center;
+}
+.game-over .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.game-over .text {
+    text-align: center;
+    color: #e0e1dd;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons{
+    display: flex;
+    flex-flow: wrap row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.text ~ .buttons button{
+    padding: 0.5rem 1.5rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    color: white;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+.p-again{
+    background-color: #ff003d;
+}
+.setting{
+    background-color: #588157;
+}
+/* ===================================== WHEN USER SETS THE DIFFICULTY =================================== */
+.levels{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.levels button{
+    min-width: 150px;
+
+    padding: 1rem 0;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+    cursor: pointer;
+}
+.levels button:first-child{
+    background-color: #588157; 
+}
+.levels button:nth-child(2){
+    background-color: #fca311;
+}
+.levels button:nth-child(3){
+    background-color: #fb5607;
+}
+.levels button:nth-child(4){
+    background-color: #e63946;
+}
+.levels button:last-child{
+    background-color: #d00000;
+}
